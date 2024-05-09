@@ -3,10 +3,10 @@ if vim.g.did_load_keymaps_plugin then
 end
 vim.g.did_load_keymaps_plugin = true
 
-local api = vim.api
-local fn = vim.fn
+--local api = vim.api
+--local fn = vim.fn
 local keymap = vim.keymap.set
-local diagnostic = vim.diagnostic
+--local diagnostic = vim.diagnostic
 local opts = { noremap = true, silent = true }
 local wk = require("which-key")
 local which_key_opts = {

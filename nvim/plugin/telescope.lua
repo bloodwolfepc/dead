@@ -3,10 +3,10 @@ if vim.g.did_load_telescope_plugin then
 end
 vim.g.did_load_telescope_plugin = true
 
-local telescope = require('telescope')
+--local telescope = require('telescope')
 local actions = require('telescope.actions')
-local builtin = require ('telescope.builtin')
-local icons = require "icons"
+--local builtin = require ('telescope.builtin')
+--local icons = require "icons"
 local wk = require "which-key"
 
 wk.register {

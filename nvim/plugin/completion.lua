@@ -14,7 +14,7 @@ vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 local cmp = require('cmp')
 local lspkind = require('lspkind')
 local luasnip = require('luasnip')
-local icons = require('icons')
+--local icons = require('icons')
 local check_backspace = function()
   local col = vim.fn.col "." -1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
@@ -37,23 +37,23 @@ cmp.setup {
       c = cmp.mapping.close(),
     },
     ["<CR>"] = cmp.mapping.confirm { select = true },
-    sources = {
-      { name = "nvim_lsp" },
-      { name = "luasnip" },
-      { name = "nvim_lua" },
-      { name = "buffer" },
-      { name = "path" },
-      { name = "calc" },
-      { name = "emoji" },
-    },
-    confirm_opts = { --UNKNOWN
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = false,
-    },
-    -- window = {
-    -- },
-    experimental = {
-      ghost_text = false,
-    },
+  },
+  sources = {
+    { name = "nvim_lsp" },
+    { name = "luasnip" },
+    { name = "nvim_lua" },
+    { name = "buffer" },
+    { name = "path" },
+    { name = "calc" },
+    { name = "emoji" },
+  },
+  confirm_opts = { --UNKNOWN
+    behavior = cmp.ConfirmBehavior.Replace,
+    select = false,
+  },
+  -- window = {
+  -- },
+  experimental = {
+    ghost_text = false,
   },
 }
