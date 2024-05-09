@@ -37,22 +37,22 @@ wk.register {
 
 require("telescope").setup {
   defaults = {
-    vimgrep_arguments = {
-      "rg",
-      },
+--    vimgrep_arguments = {
+--      "rg",
+--      },
       mappings = {
         n = {
           ["q"] = actions.close,
         },
       },
-    extensions = {
-      fzf = {
-        fuzzy = true,
-        override_generic_sorter = true,
-        override_file_sorter = true,
-        case_mode = "smart_case",
-      },
-    },
+--    extensions = {
+--      fzf = {
+--        fuzzy = true,
+--        override_generic_sorter = true,
+--        override_file_sorter = true,
+--        case_mode = "smart_case",
+--      },
+--    },
   },
 }
 
